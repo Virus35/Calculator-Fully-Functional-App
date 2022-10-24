@@ -1,5 +1,5 @@
 ## 🔗Fully Functional Automatic Calculator
-[https://vishal-rock-paper-scissors.netlify.app/](https://vishal-rock-paper-scissors.netlify.app/)
+[https://vishal-fully-functional-calculator.netlify.app/](https://vishal-fully-functional-calculator.netlify.app/)
 
 
 ## ⭐ Fully Functional Automatic Calculator ⭐
