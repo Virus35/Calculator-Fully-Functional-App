@@ -39,7 +39,7 @@ buttons.forEach((cur_val, index) => {
       calculation.value += e.target.textContent;
       let temp1 = eval(calculation.value);
       if (isNaN(temp1)) {
-        result.value = "cannot divide by zero";
+        result.value = "cannot divide by zero(undefined)";
       } else {
         result.value = temp1;
       }
