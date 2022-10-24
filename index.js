@@ -18,7 +18,7 @@ buttons.forEach((cur_val, index) => {
           result.value = "0";
         } else {
           if (isNaN(temp)) {
-            result.value = "cannot divide by zero";
+            result.value = "cannot divide by zero(undefined)";
           } else {
             result.value = temp;
           }
