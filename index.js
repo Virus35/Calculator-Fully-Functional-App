@@ -1,44 +1,48 @@
-const buttons=document.querySelectorAll("button");
-let calculation=document.querySelector(".calculation");
-let result=document.querySelector(".result");
+const buttons = document.querySelectorAll(".common");
+let calculation = document.querySelector(".calculation");
+let result = document.querySelector(".result");
 
-const buttonDummy=document.querySelectorAll("common");
-
-buttons.forEach((cur_val,index)=>{
-    cur_val.addEventListener("click",(e)=>{
-        if(e.target.classList.contains("AC")){
-            result.value=" ";
-            calculation.value=" ";
-            // console.log("ac");
+buttons.forEach((cur_val, index) => {
+  cur_val.addEventListener("click", (e) => {
+    if (e.target.classList.contains("AC")) {
+      result.value = " ";
+      calculation.value = " ";
+    } else if (e.target.classList.contains("cross")) {
+      calculation.value += "*";
+    } else if (e.target.classList.contains("clear")) {
+      let dummy = calculation.value.slice(0, calculation.value.length - 1);
+      calculation.value = String(dummy);
+      try {
+        let temp = eval(calculation.value);
+        if (temp == undefined) {
+          result.value = "0";
+        } else {
+          if (isNaN(temp)) {
+            result.value = "cannot divide by zero";
+          } else {
+            result.value = temp;
+          }
         }
-        else if(e.target.classList.contains("cross")){
-            calculation.value+="*";
-            // console.log(calculation.value);
+      } catch {
+        let final = eval(
+          calculation.value.slice(0, calculation.value.length - 1)
+        );
+        if (isNaN(final)) {
+          result.value = "cannot divide by zero(undefined)";
+        } else {
+          result.value = final;
         }
-        else if(e.target.innerHtml=="="){
-            result.value=eval(calculation.value);
-        }
-        else if(e.target.classList.contains("clear")){
-            let dummy=calculation.value.slice(0,calculation.value.length-1);
-            calculation.value=String(dummy);
-            try{
-                result.value=eval(calculation.value);
-            }
-            catch{
-                result.value=eval(calculation.value.slice(0,calculation.value.length-1));
-            }
-        }
-        else if(e.target.classList.contains("divide")){
-            calculation.value+="/";
-        }
-
-
-        else{
-            calculation.value+=e.target.textContent;
-            result.value=eval(calculation.value);
-            
-        }
-    })
-})
-
-
+      }
+    } else if (e.target.classList.contains("divide")) {
+      calculation.value += "/";
+    } else {
+      calculation.value += e.target.textContent;
+      let temp1 = eval(calculation.value);
+      if (isNaN(temp1)) {
+        result.value = "cannot divide by zero";
+      } else {
+        result.value = temp1;
+      }
+    }
+  });
+});

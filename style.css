@@ -56,11 +56,10 @@ body{
 }
 
 button{
-    /* border: 2px solid red; */
+    /* border: 12px solid red; */
     height:50px;
     width: 50px;
-    padding: 1em;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,14 +68,21 @@ button{
     background: #243441;
     color: #EBEBEB;
     outline: none;
+    /* border: 2px solid grey; */
+    overflow: hidden;
+    cursor: pointer;
     border: none;
 
 }
 
-button:active{
+/* .common{
+    border: 2px solid grey;
+} */
+
+/* button:active{
     transform: translateY(4px);
     background: "green";
-}
+} */
 
 
 .main-flex-2 .button{
@@ -89,13 +95,14 @@ button:active{
 
 .special{
     flex-grow: 1;
+    background: #EC802E;
     /* border: 2px solid red; */
 }
 
-.special button{
+/* .special{
     width: 100%;
     background: #EC802E;
-}
+} */
 
 .button-1{
     color: #EC802E;
