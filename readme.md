@@ -15,7 +15,7 @@ This is the assignment given in the **"JavaScript Full Stack Web Developer Bootc
 ### 📌 Overview 
 
 
-![PROJECT-SCREENSHOT](./Images/vishal-rock-paper-scissors.netlify.app_.png)
+![PROJECT-SCREENSHOT](./Vishal-Fully-Functional-Automatic-Calculator-Netlify.png)
 
 ### 📌 What I Learn
 
@@ -24,7 +24,7 @@ This is the assignment given in the **"JavaScript Full Stack Web Developer Bootc
   👉 3. Managing Objects, Handling Event Listeners. <br>
   👉 4. Loops and conditionals. <br>
 
-### Time Taken to Complete this Project:- 1.5 Hours
+### Time Taken to Complete this Project:- 4 Hours
 
 ### 📬 Connect With Me
 
