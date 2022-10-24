@@ -1,4 +1,4 @@
-## 🔗Fully Functional Automatic Calculator
+## 🔗 Fully Functional Automatic Calculator
 [https://vishal-fully-functional-calculator.netlify.app/](https://vishal-fully-functional-calculator.netlify.app/)
 
 
