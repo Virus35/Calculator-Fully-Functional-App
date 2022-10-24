@@ -15,7 +15,7 @@ buttons.forEach((cur_val, index) => {
       try {
         let temp = eval(calculation.value);
         if (temp == undefined) {
-          result.value = "0";
+          result.value = "";
         } else {
           if (isNaN(temp)) {
             result.value = "cannot divide by zero(undefined)";
